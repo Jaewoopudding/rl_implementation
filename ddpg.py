@@ -159,7 +159,7 @@ class DDPGAgent(torch.nn.Module):
             self.reward_history = []
             elapsed_time = time.time() - start_time
             if t % 10 == 0:
-                print(f'Epochs \t|| {t} \t|| - reward sum: {reward_sum:.2f}\t|| Elapsed Time: {(elapsed_time)/10:.2f}s per episode')
+                print(f'Epochs \t|| {t} \t|| - reward sum: {reward_sum:.2f}\t|| Elapsed Time: {(elapsed_time):.2f}s per episode')
         return self.avg_reward_history
 
     def soft_update(self, network, target_network):

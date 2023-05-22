@@ -164,7 +164,8 @@ class DQNAgent(nn.Module):
             display.clear_output(wait=True)
         else:
             display.display(plt.gcf())
-                
+
+
 if __name__ == '__main__':
     BATCH_SIZE = 128
     GAMMA = 0.99
